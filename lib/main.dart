@@ -66,7 +66,7 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Text('Class Activity 01: Tabs'),
+        title: Text('Digital Pet App'),
         bottom: TabBar(
           controller: _tabController,
           isScrollable: false,
@@ -86,7 +86,7 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
                     context: context,
                     builder: (context) => AlertDialog(
                       title: Text("Alert"),
-                      content: Text("This is this tab's alert dialog."),
+                      content: Text("Welcome to the digital pet app. Press OK to return to home."),
                       actions: [
                         TextButton(
                           onPressed: () => Navigator.pop(context),
