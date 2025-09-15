@@ -116,7 +116,7 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
                   ),
                   SizedBox(height: 20),
                   Image.network(
-                    'https://images.unsplash.com/photo-1464660439080-b79116909ce7?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3Vuc2hpbmV8ZW58MHx8MHx8fDA%3D',
+                    'https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*',
                     width: 250,
                     height: 250,
                   ),
