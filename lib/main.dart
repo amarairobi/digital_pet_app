@@ -149,6 +149,11 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
                 Card(child: ListTile(title: Text("Item 1"))),
                 Card(child: ListTile(title: Text("Item 2"))),
                 Card(child: ListTile(title: Text("Item 3"))),
+                Image.network(
+                    'https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_November_2010-1a.jpg',
+                    width: 250,
+                    height: 250,
+                  ),
               ],
             ),
           ),
