@@ -80,26 +80,37 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
           Container( // container for colors
             color: Colors.orange[100],
             child: Center(
-              child: GestureDetector(
-                onTap: () {
-                  showDialog(
-                    context: context,
-                    builder: (context) => AlertDialog(
-                      title: Text("Alert"),
-                      content: Text("Welcome to the digital pet app. Press OK to return to home."),
-                      actions: [
-                        TextButton(
-                          onPressed: () => Navigator.pop(context),
-                          child: Text("OK"),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  GestureDetector(
+                    onTap: () {
+                      showDialog(
+                        context: context,
+                        builder: (context) => AlertDialog(
+                          title: Text("Alert"),
+                          content: Text("Welcome to the digital pet app. Press OK to return to home."),
+                          actions: [
+                            TextButton(
+                              onPressed: () => Navigator.pop(context),
+                              child: Text("OK"),
+                            ),
+                          ],
                         ),
-                      ],
+                      );
+                    },
+                    child: Text(
+                      "Welcome to Tab 1",
+                      style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
                     ),
-                  );
-                },
-                child: Text(
-                  "Welcome to Tab 1",
-                  style: TextStyle(fontSize: 20, fontStyle: FontStyle.italic),
-                ),
+                  ),
+                  SizedBox(height: 20),
+                  Image.network(
+                    'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=400',
+                    width: 200,
+                    height: 200,
+                  ),
+                ],
               ),
             ),
           ),
@@ -129,13 +140,24 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
           Container(
             color: Colors.blue[100],
             child: Center(
-              child: ElevatedButton(
-                onPressed: () {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(content: Text("Button pressed in Tab 3!")),
-                  );
-                },
-                child: Text("Click me"),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Image.network(
+                    'https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400',
+                    width: 200,
+                    height: 200,
+                  ),
+                  SizedBox(height: 20),
+                  ElevatedButton(
+                    onPressed: () {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(content: Text("Button pressed in Tab 3!")),
+                      );
+                    },
+                    child: Text("Click me"),
+                  ),
+                ],
               ),
             ),
           ),
@@ -162,4 +184,3 @@ class __TabsNonScrollableDemoState extends State<_TabsNonScrollableDemo>
     );
   }
 }
-
